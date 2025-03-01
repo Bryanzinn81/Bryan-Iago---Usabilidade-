@@ -1,64 +1,93 @@
-
-body{
-    text-align: center;
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+a{
+    color: black;
+    text-decoration: none;
 }
 header{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap-reverse;
-    justify-content: space-between;
-
-padding: 3em;}
-    h1 {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3em;
+}
+header img{
+    transition: transform 0.3s ease;
+}
+header img:hover{
+    transform: scale(1.5);
+}
+h1 {
         font-size: 36px;
         color: #e60012;
         text-align: center;
         margin-top: 40px;
     }
 
-    h2 {
+h2 {
         font-size: 28px;
         color: #333;
-        margin-top: 30px;
         text-align: center;
     }
-
-    p {
+p {
         font-size: 18px;
         color: #666;
         line-height: 1.8;
         text-align: justify;
-        width: 70%;
         margin: 0 auto;
     }
-
-    #cria {
-        display: flex;
-        justify-content: center;
+#cria {
+        text-align: center;
         padding: 40px;
-        background-color: #fff;
-        margin: 40px auto;
-        width: 80%;
-        border-radius: 10px;
+        background-color: #c4bebe;
+        margin: auto 10em;
+        border-radius: 2em;
+        margin-bottom: 2em;
+        
     }
 #links{
+    max-width: 80%;
+    margin: 2em auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    padding-right: 3em;
+    align-items: center;
 }
-    #banner {
+.link{
+    background-color: #e60012;
+    padding: 1.5em;
+    border-radius: 2em;
+}
+#banner {
+        text-align: center;
         background-color: #e60012;
-        height: 800px;
         margin-top: 40px;
         padding-top: 3em;
+        padding-bottom: 3em;
+        margin: auto 10em;
+        border-radius: 2em;
     }
-
-    footer {
-        padding: 20px;
+#banner img{
+    width: 70%;
+    height: auto;
+    border-radius: 1em;
+}
+footer {
         background-color: #222;
         color: #fff;
-        margin-top: 40px;
         display: flex;
-        justify-content: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
     }
-
+footer p{
+    text-align: center;
+    padding: 1em;
+    font-size: 2em;
+}
